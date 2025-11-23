@@ -6,14 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    
+<script>
 
-        var name = 'sumit'
-        var favouritesubject = 'maths'
-        var grade = 5
-        
-        document.write(`The name of the student is ${name}, he studies in ${grade}, and his favourite subject is ${favouritesubject}`)
+    let OddOrEven = function(number){
 
-    </script>
+        if (number % 2 ==0){
+            document.write(number + " is an even number")
+        }
+        else {
+            document.write(number + " is an odd number")
+        }
+
+    }
+
+    let number = prompt("Enter the number:");
+    OddOrEven(number)
+
+
+</script>
+
+
 </body>
 </html>
