@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .alert {
+            color: aqua;
+            background-color: green;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1 id="heading">Welcome</h1>
+        <p>Coding is fun</p>
+    </header>
+    <p>Let's create a div</p>
+</body>
+
+
 <script>
 
-    let OddOrEven = function(number){
+    let div = document.createElement('div');
+    div.id = 'paragraph';
+    div.className = 'alert';
+    div.innerHTML = '<p>Congrats! You have created a div.</p>';
+    document.body.append(div)
 
-        if (number % 2 ==0){
-            document.write(number + " is an even number")
-        }
-        else {
-            document.write(number + " is an odd number")
-        }
-
-    }
-
-    let number = prompt("Enter the number:");
-    OddOrEven(number)
+    let heading = document.getElementById('heading');
+    heading.innerHTML = '&#128512';
 
 
+    document.querySelector('header p').innerHTML = 'Coding is fun';
 </script>
-
-
-</body>
 </html>
