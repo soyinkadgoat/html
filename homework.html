@@ -8,13 +8,13 @@
 <body>
     <script>
 
-        var name = "Soyinka AbdulAzeem"
-        var age = 11
-        var grade = 6
-        var nameOfBrother = "Soyinka AbdulHamid"
-        var ageOfBrother = 14
+        function SquareNumber(number){
+            return number * number
+        }
 
-        document.write(`My name is ${name}, I am ${age} years old. I am in primary ${grade} in my school.`)
+        let userInput = prompt("Enter a number to square:");
+        let squaredValue = SquareNumber(userInput);
+        document.write("The square of " + userInput + " is " + squaredValue + ".")
 
     </script>
 </body>
