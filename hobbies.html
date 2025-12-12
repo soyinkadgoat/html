@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hobbies</h1>
+    <p id="hobbies">I enjoy drawing, watching tv, reading and playing games.</p>
+    <button onclick="changeMood()">Change Mood</button>
+
+    <div class="textEntry">
+        Share your favorite hobby: <input type="text" id="hobbyInput">
+    </div>
+
+    <button onclick="submitHobby()">Submit Hobby</button>
+
+    <script>
+    function changeMood() {
+        document.body.style.backgroundColor = "lightblue";
+    }
+    function submitHobby() {
+        const hobby = document.getElementById('hobbyInput').value;
+        if (hobby) {
+            alert(`Your favorite hobby is: ${hobby}`);
+        } else {
+            alert("Please enter a hobby.");
+        }
+    }
+
+    </script>
+</html>
