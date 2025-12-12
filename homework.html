@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #myElement {
+            border: 1px solid #CCC;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <meta charset="utf-8">
 </head>
 <body>
+    <h2>Changing font color of HTML Element in Javascript</h2>
+    <div id="myElement">This text will change color</div>
+    <br>
+    <button onclick="changeStyle()">Click me</button>
     <script>
-
-        function SquareNumber(number){
-            return number * number
+        function changeStyle() {
+            document.getElementById("myElement").style.color = "red";
         }
-
-        let userInput = prompt("Enter a number to square:");
-        let squaredValue = SquareNumber(userInput);
-        document.write("The square of " + userInput + " is " + squaredValue + ".")
-
     </script>
 </body>
 </html>
